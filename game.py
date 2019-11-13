@@ -1,6 +1,28 @@
 # coding=utf-8
 import pygame
 import random
+print("""
+░░░░░░░░░░░░░░░░░░░░░▄▄▄░░░░
+░░░░░░░░░░░░░░░░░░░▄█████▄░░
+░░░░░░░░░░░░░░░░░░░████████▄
+░░░░░░░░░░░░░░░░░░░███░░░░░░
+░░░░░░░░░░░░░░░░░░░███░░░░░░
+░░░░░░░░░░░░░░░░░░░███░░░░░░
+░░░░░░░░░░░░░░░░░░░███░░░░░░
+░░░░░░░░░░░░░░░░░░░███░░░░░░
+░░░░░░░░░░░░░▄▄▄▄▄████░░░░░░
+░░░░░░░░▄▄████████████▄░░░░░
+░░░░▄▄██████████████████░░░░
+▄▄██████████████████████░░░░
+░▀▀████████████████████▀░░░░
+░░░░▀█████████████████▀░░░░░
+░░░░░░▀▀███████████▀▀░░░░░░░
+░░░░░░░░░▀███▀▀██▀░░░░░░░░░░
+░░░░░░░░░░█░░░░██░░░░░░░░░░░
+░░░░░░░░░░█░░░░█░░░░░░░░░░░░
+░░░▄▄▄▄███████▄███████▄▄▄▄░░
+    """
+    )
 pygame.init()
 window = pygame.display.set_mode((1280,720))
 pygame.display.set_caption('Knight DEMO')
@@ -28,7 +50,7 @@ pygame.image.load('animation/_JUMP_004-removebg-preview.png'),pygame.image.load(
 pygame.image.load('animation/_JUMP_006-removebg-preview.png')]
 # Фон
 bg= pygame.image.load('BG/bg.jpg')
-# Бомбы ?!
+# Бомбы
 bomb = pygame.image.load('mob/bomb.png')
 """Размеры нашего игрока"""
 player_widht = 40
@@ -145,10 +167,10 @@ while q == True:
 pygame.quit()
 
  # Смерть
-# PlayerDie = [pygame.image.load('_DIE_000-removebg-preview.png'),pygame.image.load('_DIE_001-removebg-preview.png'),
-# pygame.image.load('_DIE_002-removebg-preview.png'),pygame.image.load('_DIE_003-removebg-preview.png'),
-# pygame.image.load('_DIE_004-removebg-preview.png'),pygame.image.load('_DIE_005-removebg-preview.png'),
-# pygame.image.load('_DIE_006-removebg-preview.png')]
+# PlayerDie = [pygame.image.load('animation/_DIE_000-removebg-preview.png'),pygame.image.load('animation/_DIE_001-removebg-preview.png'),
+# pygame.image.load('animation/_DIE_002-removebg-preview.png'),pygame.image.load('animation/_DIE_003-removebg-preview.png'),
+# pygame.image.load('animation/_DIE_004-removebg-preview.png'),pygame.image.load('animation/_DIE_005-removebg-preview.png'),
+# pygame.image.load('animation/_DIE_006-removebg-preview.png')]
 # Добавлю вместе с мобами
 # Условия смерти:
 # когда координаты игрока + его ширина + высота совпдают с координатами врага+ширина врага + высота врага
